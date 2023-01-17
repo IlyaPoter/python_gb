@@ -7,18 +7,20 @@ import os
 def mytictactoe(val):
     os.system('cls')
     print("\n")
-    print("     |     |")
-    print("  {}  |  {}  |  {}".format(val[0], val[1], val[2]))
-    print('_____|_____|_____')
+    print(' _________________')
+    print("|     |     |     |")
+    print("|  {}  |  {}  |  {}  |".format(val[0], val[1], val[2]))
+    print('|_____|_____|_____|')
 
-    print("     |     |")
-    print("  {}  |  {}  |  {}".format(val[3], val[4], val[5]))
-    print('_____|_____|_____')
+    print("|     |     |     |")
+    print("|  {}  |  {}  |  {}  |".format(val[3], val[4], val[5]))
+    print('|_____|_____|_____|')
 
-    print("     |     |")
+    print("|     |     |     |")
 
-    print("  {}  |  {}  |  {}".format(val[6], val[7], val[8]))
-    print("     |     |")
+    print("|  {}  |  {}  |  {}  |".format(val[6], val[7], val[8]))
+    print('|_____|_____|_____|')
+
     print("\n")
 
 def check(val,user):
@@ -60,7 +62,7 @@ def check(val,user):
 first_user = input('Введите имя: ')
 second_user = input('Введите имя: ')
 list_users = [first_user, second_user]
-list_symbol = ['Х', 'O']
+list_symbol = ['X', 'O']
 first_move = random.choice(list_users)
 symbol = random.choice(list_symbol)
 
@@ -75,7 +77,7 @@ def games(user, val, symbol):
             val[i] = symbol
     if check(val,user):
         mytictactoe(val)
-        return print(f'Конец игры! Выйграл {user}')
+        return print(f'Конец игры! Выиграл {user}')
     if user == first_user:
         user = second_user
     else:

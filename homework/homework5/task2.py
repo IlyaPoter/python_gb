@@ -18,7 +18,7 @@ def games(user, sweets):
     move = int(input(f'Сколько конфет берет игрок {user} (не более 28): '))
     sweets = sweets-move
     if sweets<=0:
-        return print(f'Конец игры! Выйграл {user}')
+        return print(f'Конец игры! Выиграл {user}')
     if user == first_user:
         user = second_user
     else: user = first_user

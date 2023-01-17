@@ -29,7 +29,7 @@ def games(user, sweets):
         print(f'Бот Себастьян взял {move} конфет')
     sweets = sweets-move
     if sweets<=0:
-        return print(f'Выйграл {user}')
+        return print(f'Выиграл {user}')
     if user == first_user:
         user = second_user
     else: user = first_user
