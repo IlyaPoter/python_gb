@@ -4,6 +4,11 @@ import logger
 import controller
 
 
+
+
+
+
+
 user_input = input('Вычисление - 1. Вывод лога - 2.   ')
 if user_input == '1':
     print(controller.control_data())
